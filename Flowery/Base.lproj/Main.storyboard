@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bNC-QY-N1u">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Coz-uN-3An">
+            <objects>
+                <viewController id="xBd-0k-LQp" customClass="ViewController" customModule="Flowery" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iVb-X1-gf0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-RL-1p8">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0C-WU-W8x">
+                                <rect key="frame" x="5" y="625" width="169" height="73"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Td6-lH-YaD">
+                                    <rect key="frame" x="0.0" y="0.0" width="169" height="73"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mcH-Kz-Pr2">
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6nj-zF-U9S">
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="regular"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flower Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCF-x8-iLx">
+                                            <rect key="frame" x="5" y="5" width="159" height="63"/>
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RCF-x8-iLx" firstAttribute="top" secondItem="Td6-lH-YaD" secondAttribute="top" constant="5" id="3Pa-jc-g2j"/>
+                                        <constraint firstAttribute="trailing" secondItem="RCF-x8-iLx" secondAttribute="trailing" constant="5" id="M4C-NR-jAw"/>
+                                        <constraint firstItem="RCF-x8-iLx" firstAttribute="leading" secondItem="Td6-lH-YaD" secondAttribute="leading" constant="5" id="QqQ-7s-w2a"/>
+                                        <constraint firstAttribute="bottom" secondItem="RCF-x8-iLx" secondAttribute="bottom" constant="5" id="fwE-ht-Wy0"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="systemChromeMaterial"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JlN-RL-1p8" firstAttribute="top" secondItem="dN5-6s-dK8" secondAttribute="top" id="2i7-68-xzz"/>
+                            <constraint firstItem="dN5-6s-dK8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Y0C-WU-W8x" secondAttribute="trailing" constant="10" id="2nO-MM-owC"/>
+                            <constraint firstItem="Y0C-WU-W8x" firstAttribute="leading" secondItem="dN5-6s-dK8" secondAttribute="leading" constant="5" id="QWJ-gq-oRj"/>
+                            <constraint firstItem="dN5-6s-dK8" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Y0C-WU-W8x" secondAttribute="bottom" constant="5" id="WPH-Qo-zss"/>
+                            <constraint firstAttribute="bottom" secondItem="JlN-RL-1p8" secondAttribute="bottom" id="Xg2-zU-lRQ"/>
+                            <constraint firstItem="Y0C-WU-W8x" firstAttribute="top" secondItem="dN5-6s-dK8" secondAttribute="top" constant="537" id="kQv-k6-01e"/>
+                            <constraint firstItem="JlN-RL-1p8" firstAttribute="leading" secondItem="iVb-X1-gf0" secondAttribute="leading" id="li7-Rm-Lwp"/>
+                            <constraint firstAttribute="trailing" secondItem="JlN-RL-1p8" secondAttribute="trailing" id="y6I-Tl-v28"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dN5-6s-dK8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yVX-kx-0Th">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="zfd-sC-9Ow">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cameraTapped:" destination="xBd-0k-LQp" id="NKp-zg-tKU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="flowerImageView" destination="JlN-RL-1p8" id="ZQW-ak-OjT"/>
+                        <outlet property="flowerLabel" destination="RCF-x8-iLx" id="h0M-m1-H3D"/>
+                        <outlet property="infoView" destination="Y0C-WU-W8x" id="WPp-Wv-w8Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWj-X8-BqH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2091.304347826087" y="50.892857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HFk-0G-PIj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bNC-QY-N1u" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kiX-mf-AvE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.046060194380000002" green="0.33969012160000001" blue="0.68794103760000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xBd-0k-LQp" kind="relationship" relationship="rootViewController" id="qxp-gV-EEF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhN-aI-mSL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1179.7101449275362" y="50.892857142857139"/>
+        </scene>
+    </scenes>
+</document>
